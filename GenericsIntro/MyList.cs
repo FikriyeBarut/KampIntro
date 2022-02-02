@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace GenericsIntro
 {
-    class MyList<T>
+    class MyList<T>//generic class
     {
         T[] items;
         //constructor
-        //classı new lediğimiz anda çalışan blok constructor
+        //classı new lediğimiz anda çalışan blok constructortır
         public MyList()
         {
             items = new T[0];
         }
         public void Add(T item)
         {
-            T[] tempArray = items;//gecici dizinin referansı =items ın referansı .gecici olarak items ın elemanlarını tutuyo
+            T[] tempArray = items;//gecici dizinin referansı = items dizisinin referansı .gecici olarak items ın elemanlarını tutuyo
             items=new T[items.Length+1];//dizinin eleman sayısını 1 arttırır
             for (int i = 0; i < tempArray.Length; i++)
             {
