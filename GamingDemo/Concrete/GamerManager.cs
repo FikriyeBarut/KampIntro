@@ -10,7 +10,7 @@ namespace GamingDemo.Concrete
 {
     public class GamerManager : IGamerService
     {
-        IGamerCheckService _gamerCheckService;
+        IGamerCheckService _gamerCheckService;//constructor
 
         public GamerManager(IGamerCheckService gamerCheckService)
         {
@@ -21,7 +21,7 @@ namespace GamingDemo.Concrete
         {
             if (_gamerCheckService.CheckGamerIfRealPerson(gamer) == true)
             {
-                Console.WriteLine("Yeni oyuncu eklendi : " + gamer.FirstName + " " + gamer.LastName);
+                Console.WriteLine("Kayıt başarılı");
             }
             else
             {
@@ -31,12 +31,12 @@ namespace GamingDemo.Concrete
 
         public void Delete(Gamer gamer)
         {
-            Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " isimli oyuncu silindi.");
+            Console.WriteLine("Kayıt silindi");
         }
 
         public void Update(Gamer gamer)
         {
-            Console.WriteLine("Bilgiler güncellendi : " + gamer.FirstName + " " + gamer.LastName);
+            Console.WriteLine("Kayıt güncellendi");
         }
     }
 }
