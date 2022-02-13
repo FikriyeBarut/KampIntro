@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo", "RecapDemo\Reca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamingDemo", "GamingDemo\GamingDemo.csproj", "{D7592E55-F914-4152-9510-447BE9102405}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqProject", "LinqProject\LinqProject.csproj", "{F60A8B50-CBA5-45E0-9949-DDC4EEC9E676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{D7592E55-F914-4152-9510-447BE9102405}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7592E55-F914-4152-9510-447BE9102405}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7592E55-F914-4152-9510-447BE9102405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60A8B50-CBA5-45E0-9949-DDC4EEC9E676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60A8B50-CBA5-45E0-9949-DDC4EEC9E676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60A8B50-CBA5-45E0-9949-DDC4EEC9E676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60A8B50-CBA5-45E0-9949-DDC4EEC9E676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

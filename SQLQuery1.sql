@@ -36,3 +36,18 @@ on o.OrderID = od.OrderID
 Select * from Customers c left join Orders o
 on c.CustomerID = o.CustomerID
 where o.CustomerID is null
+
+
+
+/*Her bir üründen toplamda ne kadar para kazandığımızı bulunuz.
+İpucu : Group by kullanılacak
+İpucu : Products, Orders, Order Details tabloları join edilecek.
+İpucu : Sum kullanılacak.*/
+select p.ProductName as  [Ürün Adi],sum(p.UnitPrice*od.quantity) as [Toplam (Tl)]
+from Products p
+inner join [Order Details] as od
+on p.ProductID=od.ProductID
+inner join Orders o
+on od.OrderID=o.OrderID
+group by p.ProductName
+
