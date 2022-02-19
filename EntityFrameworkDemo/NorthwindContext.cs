@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkDemo
 {
-    public class NorthwindContext:DbContext//context bizim veritabanındaki tablolarımızla classlarımızı ,l,ikilendirmeye yarıyor
+    public class NorthwindContext:DbContext//context bizim veritabanındaki tablolarımızla classlarımızı ilişkilendirmeye yarıyor
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassMetotDemo
 {
-    internal class Musteri
+    public class Musteri
     {
         public int Id { get; set; }  
         public string Ad { get; set; } 

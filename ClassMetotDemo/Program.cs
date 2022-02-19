@@ -24,6 +24,12 @@ namespace ClassMetotDemo
             musteri2.Telefon = 2345;
             musteri2.Adres = "Avcilar";
 
+            //Musteri[] musteriler =new Musteri[] { musteri1, musteri2 };
+            //foreach (var musteri in musteriler)
+            //{
+            //    Console.WriteLine(musteri.Adres);
+            //}
+
             MusteriManager musteriManager=new MusteriManager();
             musteriManager.Ekle(musteri1);
             musteriManager.Ekle(musteri2);
